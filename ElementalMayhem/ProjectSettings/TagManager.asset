@@ -42,3 +42,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: UI
+    uniqueID: 2924482193
+    locked: 0
+  - name: ExpOrb
+    uniqueID: 3844931305
+    locked: 0
