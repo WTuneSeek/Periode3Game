@@ -12,7 +12,7 @@ public class Currency : MonoBehaviour
     {
         if (col.CompareTag("Player"))
         {
-            col.GetComponent<PlayerStats>().goldCoin += 1;
+            col.GetComponent<PlayerStats>().currMoney += 1;
         }
     }
 }
