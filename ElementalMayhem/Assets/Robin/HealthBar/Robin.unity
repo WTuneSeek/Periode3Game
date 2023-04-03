@@ -830,7 +830,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -874.73, y: 429}
+  m_AnchoredPosition: {x: -690.93, y: 317.84998}
   m_SizeDelta: {x: 88.05, y: 126.89}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &502136579
@@ -1043,11 +1043,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5118519647965630574, guid: 906bc223eb522ba4eba759009fe9172b, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -633.8
+      value: -450
       objectReference: {fileID: 0}
     - target: {fileID: 5118519647965630574, guid: 906bc223eb522ba4eba759009fe9172b, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 373.15
+      value: 262
       objectReference: {fileID: 0}
     - target: {fileID: 5118519647965630574, guid: 906bc223eb522ba4eba759009fe9172b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1249,7 +1249,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!224 &719030053 stripped
 RectTransform:
@@ -1535,8 +1535,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -863.52, y: 355}
-  m_SizeDelta: {x: 110.07, y: 126.89}
+  m_AnchoredPosition: {x: -679.3401, y: 243.84998}
+  m_SizeDelta: {x: 110.83, y: 126.89}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &974664123
 MonoBehaviour:
@@ -2171,7 +2171,7 @@ RectTransform:
   - {fileID: 502136578}
   - {fileID: 974664122}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2287,11 +2287,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5118519647965630574, guid: 906bc223eb522ba4eba759009fe9172b, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -634
+      value: -450.2
       objectReference: {fileID: 0}
     - target: {fileID: 5118519647965630574, guid: 906bc223eb522ba4eba759009fe9172b, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 448
+      value: 336.84998
       objectReference: {fileID: 0}
     - target: {fileID: 5118519647965630574, guid: 906bc223eb522ba4eba759009fe9172b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2767,7 +2767,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1870771090
 GameObject:
@@ -3170,7 +3170,7 @@ PrefabInstance:
       objectReference: {fileID: 411202037}
     - target: {fileID: 6470196139661762475, guid: 1a1f1f46584d51546a070f59ab4ff3ff, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6470196139661762475, guid: 1a1f1f46584d51546a070f59ab4ff3ff, type: 3}
       propertyPath: m_LocalPosition.x
