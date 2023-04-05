@@ -40,6 +40,13 @@ public class PlayerStats : MonoBehaviour
         LevelUp();
     }
 
+    public void Heal(int Health)
+    {
+        currHealth += Health;
+        ChangeSliderUI();
+    }
+
+
     public void ChangeSliderUI()
     {
         healthBar.value = currHealth;
