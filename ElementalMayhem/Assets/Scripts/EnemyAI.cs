@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Pathfinding;
+using Unity.VisualScripting;
 
 public class EnemyAI : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class EnemyAI : MonoBehaviour
 
     public float speed = 200f;
     public float nextWaypointDistance = 3f;
+    //public bool isEnemyGrounded = false;
 
      Path path;
      private int currentWaypoint = 0;
