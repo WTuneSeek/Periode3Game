@@ -27,6 +27,7 @@ public class PlayerStats : MonoBehaviour
     public TextMeshProUGUI healthSliderDisplay;
     public TextMeshProUGUI expSliderDisplay;
     public TextMeshProUGUI expLevelDisplay;
+    public TextMeshProUGUI playerMoneyDisplay;
 
     private void Start()
     {
@@ -39,6 +40,13 @@ public class PlayerStats : MonoBehaviour
         LevelUp();
     }
 
+    public void Heal(int Health)
+    {
+        currHealth += Health;
+        ChangeSliderUI();
+    }
+
+
     public void ChangeSliderUI()
     {
         healthBar.value = currHealth;
@@ -49,6 +57,8 @@ public class PlayerStats : MonoBehaviour
 
         healthSliderDisplay.text = currHealth + " / " + maxHealth;
         expSliderDisplay.text = currExp + " / " + maxExp;
+        playerMoneyDisplay.text = "Coins: " + currMoney;
+
     }
 
     public void LevelUp()

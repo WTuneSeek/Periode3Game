@@ -22,7 +22,7 @@ public class PlayerScript : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            TakeDamage(10);
+            TakeDamage(5);
         }
     }
 
