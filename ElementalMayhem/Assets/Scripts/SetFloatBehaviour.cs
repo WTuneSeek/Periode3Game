@@ -1,23 +1,20 @@
-using System.Collections;
-using System.Collections.Generic;
-using DefaultNamespace;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class SetBoolBehaviour : StateMachineBehaviour
+public class SetFloatBehaviour : StateMachineBehaviour
 {
-    public string boolName;
+    public string floatName;
 
-    public bool updateOnState;
+    public bool updateOnState, updateOnStateExit;
 
-    public bool updateOnStateMachine;
+    public bool updateOnStateMachine, updateOnStateMachineExit;
 
-    public bool valueOnEnter, valueOnExit;
+    public float valueOnEnter, valueOnExit;
     // OnStateEnter is called before OnStateEnter is called on any state inside this state machine
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         if (updateOnState)
         {
-            animator.SetBool(boolName, valueOnEnter);
+            animator.SetFloat(floatName, valueOnEnter);
         }
     }
 
@@ -30,9 +27,9 @@ public class SetBoolBehaviour : StateMachineBehaviour
     // OnStateExit is called before OnStateExit is called on any state inside this state machine
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        if (updateOnState)
+        if (updateOnStateExit)
         {
-            animator.SetBool(boolName, valueOnExit);
+            animator.SetFloat(floatName, valueOnExit);
         }
     }
 
@@ -52,19 +49,13 @@ public class SetBoolBehaviour : StateMachineBehaviour
     override public void OnStateMachineEnter(Animator animator, int stateMachinePathHash)
     {
         if (updateOnStateMachine)
-        {
-            
-        }
-        animator.SetBool(boolName, valueOnEnter);
+            animator.SetFloat(floatName, valueOnEnter);
     }
 
     // OnStateMachineExit is called when exiting a state machine via its Exit Node
     override public void OnStateMachineExit(Animator animator, int stateMachinePathHash)
     {
         if (updateOnStateMachine)
-        {
-            
-        }
-        animator.SetBool(boolName, valueOnExit);
+            animator.SetFloat(floatName, valueOnExit);
     }
 }
