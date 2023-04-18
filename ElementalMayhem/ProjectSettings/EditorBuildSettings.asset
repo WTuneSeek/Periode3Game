@@ -8,10 +8,12 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
+
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: 1f1a2be07ca160e41946737608a1d050
   - enabled: 1
     path: Assets/Scenes/Quincy.unity
     guid: fbbec208ccce4dd40a5e52e241a92f57
+
   m_configObjects: {}

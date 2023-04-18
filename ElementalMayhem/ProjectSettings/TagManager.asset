@@ -3,9 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - bank
-  - MyCoin
+  tags: []
   layers:
   - Default
   - TransparentFX
@@ -13,11 +11,19 @@ TagManager:
   - 
   - Water
   - UI
-  - Obstacle
+<<<<<<< HEAD
   - 
   - 
   - 
   - 
+  - 
+=======
+  - Ground
+  - Player
+  - Enemy
+  - PlayerHitbox
+  - EnemyHitbox
+>>>>>>> 9635d0afcd188b63242d011a64d587e0796b3463
   - 
   - 
   - 
@@ -42,10 +48,4 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
-    locked: 0
-  - name: UI
-    uniqueID: 2924482193
-    locked: 0
-  - name: ExpOrb
-    uniqueID: 3844931305
     locked: 0
