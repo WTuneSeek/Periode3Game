@@ -19,9 +19,10 @@ public class HealthPickUp : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D col)
     {
         GameObject whatHit = col.gameObject;
+        Debug.Log(col.gameObject.tag);
         if (whatHit.CompareTag("Player"))
         {
-            whatHit.GetComponent<PlayerStats>().Heal(2);
+            whatHit.GetComponent<Damageable>().Heal(15);
             Destroy(gameObject);
         }
     }

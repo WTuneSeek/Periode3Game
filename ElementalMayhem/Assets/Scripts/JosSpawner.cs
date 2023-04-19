@@ -22,8 +22,10 @@ public class JosSpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Debug.Log(Enemies.Count);
         if (Wavessize != 0 && !Incooldown)
         {
+            Debug.Log(Incooldown);
             Incooldown = true;
             Instantiate(Enemies[Random.Range(0, Enemies.Count)], Spawnpoint.transform);
             Wavessize--;
@@ -33,7 +35,11 @@ public class JosSpawner : MonoBehaviour
 
     IEnumerator Waittimer()
     {
+        
         yield return new WaitForSeconds(Spawninterval);
+        
         Incooldown = false;
+        Debug.Log(" test" );
+        
     }
 }

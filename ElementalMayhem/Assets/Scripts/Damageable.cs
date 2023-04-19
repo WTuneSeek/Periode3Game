@@ -2,17 +2,25 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using DefaultNamespace;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.UI;
 
 public class Damageable : MonoBehaviour
-
 {
+
     public UnityEvent<int, Vector2> damagableHit;
     
     Animator animator;
     
+
     [SerializeField] private int _maxHealth = 100;
+
+
+    public Slider healthBar;
+    public TextMeshProUGUI healthSliderDisplay;
+
 
     public int MaxHealth
     {
@@ -97,7 +105,15 @@ public class Damageable : MonoBehaviour
 
             timeSinceHit += Time.deltaTime;
         }
+
+        ChangeSliderUI();
         // Hit(10);
+    }
+    
+    public void Heal(int healing)
+    {
+        Health += healing;
+        ChangeSliderUI();
     }
 
     // Returns whether the damageable took damage or not
@@ -116,5 +132,15 @@ public class Damageable : MonoBehaviour
         }
         // Unable to be hit
         return false;
+    }
+
+    public void ChangeSliderUI()
+    {
+        healthBar.value = _health;
+
+        healthBar.maxValue = _maxHealth;
+
+        // healthSliderDisplay.text = _health + " / " + _maxHealth;
+        
     }
 }
