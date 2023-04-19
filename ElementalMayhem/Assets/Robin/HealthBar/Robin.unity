@@ -769,7 +769,7 @@ Transform:
   m_Children:
   - {fileID: 14016484}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &429259745
 GameObject:
@@ -837,7 +837,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &502136577
 GameObject:
@@ -874,15 +874,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-<<<<<<< HEAD
   m_AnchoredPosition: {x: -669.71, y: 333.5}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
-=======
-  m_AnchoredPosition: {x: -898.6299, y: 482.00003}
-  m_SizeDelta: {x: 96.52, y: 98.26}
-  m_Pivot: {x: 0.5, y: 0.50000006}
->>>>>>> 9635d0afcd188b63242d011a64d587e0796b3463
 --- !u!114 &502136579
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1257,7 +1251,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &928271533
 GameObject:
@@ -1900,7 +1894,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Enemies:
-  - {fileID: 6470196139661762470, guid: 1a1f1f46584d51546a070f59ab4ff3ff, type: 3}
+  - {fileID: 2094205549}
   - {fileID: 7862707058319206110, guid: 059933383d7d7384796f92eb97967e40, type: 3}
   Spawnpoint: {fileID: 82373927}
   Spawninterval: 5
@@ -2142,7 +2136,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1375134545
 GameObject:
@@ -2948,7 +2942,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1917267603
 GameObject:
@@ -3207,6 +3201,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1928936753}
   m_CullTransparentMesh: 1
+--- !u!1 &2094205549 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2112976855267581366, guid: 1a1f1f46584d51546a070f59ab4ff3ff, type: 3}
+  m_PrefabInstance: {fileID: 6470196138575038050}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2100712224
 GameObject:
   m_ObjectHideFlags: 0
@@ -3365,6 +3364,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2112976855267581366, guid: 1a1f1f46584d51546a070f59ab4ff3ff, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6470196139661762470, guid: 1a1f1f46584d51546a070f59ab4ff3ff, type: 3}
       propertyPath: m_Name
       value: Enemy
